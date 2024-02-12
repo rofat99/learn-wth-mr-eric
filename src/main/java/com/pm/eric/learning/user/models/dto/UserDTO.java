@@ -24,5 +24,5 @@ public class UserDTO {
     private Long organizationId;
     private Date createdAt;
     private Date updatedAt;
-    private Date deleteAt;
+    private Date deletedAt;
 }

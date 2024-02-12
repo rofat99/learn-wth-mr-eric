@@ -35,7 +35,7 @@ public class Organization {
     @Column(name = "updated_at")
     private Date updatedAt;
 
-    @Column(name = "delete_at")
-    private Date deleteAt;
+    @Column(name = "deleted_at")
+    private Date deletedAt;
 
 }

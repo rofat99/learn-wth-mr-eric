@@ -10,4 +10,6 @@ public interface OrganizationService {
     Organization get(Long id);
     List<Organization> getList();
     Organization update(Long id, OrganizationDTO organizationDTO);
+
+    String delete(Long id);
 }

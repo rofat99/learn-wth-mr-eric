@@ -30,4 +30,9 @@ public class OrganizationServiceImpl implements OrganizationService {
     public Organization update(Long id, OrganizationDTO organizationDTO) {
         return null;
     }
+
+    @Override
+    public String delete(Long id) {
+        return null;
+    }
 }

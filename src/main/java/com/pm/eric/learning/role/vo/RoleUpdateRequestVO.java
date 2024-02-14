@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class RoleUpdateRequestVO {
     private String name;
-    private String description;
 
+    private String description;
 }

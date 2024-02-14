@@ -7,6 +7,7 @@ import java.sql.Date;
 @Data
 public class NotificationResponseVO {
     private Long id;
+
     private String name;
 
     private String description;

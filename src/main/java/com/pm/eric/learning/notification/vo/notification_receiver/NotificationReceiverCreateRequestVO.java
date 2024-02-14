@@ -2,8 +2,6 @@ package com.pm.eric.learning.notification.vo.notification_receiver;
 
 import lombok.Data;
 
-import java.sql.Date;
-
 @Data
 public class NotificationReceiverCreateRequestVO {
 

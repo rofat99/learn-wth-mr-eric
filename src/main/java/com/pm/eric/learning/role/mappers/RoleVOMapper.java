@@ -11,7 +11,7 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface RoleVOMapper {
     RoleVOMapper INSTANCE = Mappers.getMapper(RoleVOMapper.class);
     RoleDTO from(RoleCreateRequestVO roleCreateRequestVO);

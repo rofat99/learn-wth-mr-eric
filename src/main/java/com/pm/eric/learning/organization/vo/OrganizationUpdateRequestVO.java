@@ -2,8 +2,6 @@ package com.pm.eric.learning.organization.vo;
 
 import lombok.Data;
 
-import java.sql.Date;
-
 @Data
 public class OrganizationUpdateRequestVO {
 

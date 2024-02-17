@@ -2,7 +2,7 @@ package com.pm.eric.learning.organization.vo;
 
 import lombok.Data;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Data
 public class OrganizationCreateResponseVO {
@@ -14,5 +14,5 @@ public class OrganizationCreateResponseVO {
 
     private String description;
 
-    private Date createdAt;
+    private LocalDateTime createdAt;
 }

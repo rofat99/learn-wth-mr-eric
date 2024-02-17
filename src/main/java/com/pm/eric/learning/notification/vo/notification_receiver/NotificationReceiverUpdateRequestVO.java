@@ -2,7 +2,7 @@ package com.pm.eric.learning.notification.vo.notification_receiver;
 
 import lombok.Data;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Data
 public class NotificationReceiverUpdateRequestVO {
@@ -17,7 +17,7 @@ public class NotificationReceiverUpdateRequestVO {
 
     private Long organizationId;
 
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
-    private Date updatedAt;
+    private LocalDateTime updatedAt;
 }

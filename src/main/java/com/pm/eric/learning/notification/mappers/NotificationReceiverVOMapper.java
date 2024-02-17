@@ -12,7 +12,7 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface NotificationReceiverVOMapper {
     NotificationReceiverVOMapper INSTANCE = Mappers.getMapper(NotificationReceiverVOMapper.class);
 

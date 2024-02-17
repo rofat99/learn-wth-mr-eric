@@ -3,7 +3,8 @@ package com.pm.eric.learning.user.vo;
 import com.pm.eric.learning.user.types.GenderType;
 import lombok.Data;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
+
 @Data
 public class UserCreateRequestVO {
 
@@ -11,7 +12,7 @@ public class UserCreateRequestVO {
 
     private GenderType gender;
 
-    private Date dateOfBirth;
+    private LocalDateTime dateOfBirth;
 
     private String placeOfBirth;
 

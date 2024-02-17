@@ -1,38 +1,71 @@
 package com.pm.eric.learning.organization.services.impl;
 
 
+import com.pm.eric.learning.organization.mappers.OrganizationMapper;
+import com.pm.eric.learning.organization.models.dao.OrganizationDAO;
 import com.pm.eric.learning.organization.models.dto.OrganizationDTO;
 import com.pm.eric.learning.organization.services.OrganizationService;
 import com.pm.eric.learning.organization.models.entity.Organization;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Optional;
+
 @Service
 public class OrganizationServiceImpl implements OrganizationService {
-
+    @Autowired
+    private OrganizationDAO organizationRepository;
+    @Autowired
+    private OrganizationMapper organizationMapper;
 
     @Override
     public Organization create(OrganizationDTO organizationDTO) {
-        return null;
+        Organization organization = organizationMapper.from(organizationDTO);
+        return organizationRepository.save(organization);
     }
 
     @Override
     public Organization get(Long id) {
-        return null;
+        return organizationRepository.findById(id).orElseThrow();
     }
 
     @Override
     public List<Organization> getList() {
-        return null;
+        return organizationRepository.findAll();
     }
 
     @Override
     public Organization update(Long id, OrganizationDTO organizationDTO) {
-        return null;
+        Optional<Organization> optionalOrganization = organizationRepository.findById(id);
+        if(optionalOrganization.isPresent())
+        {
+            Organization organization = optionalOrganization.get();
+            organizationMapper.updateFromSourceToTarget(organizationDTO,organization);
+            return organizationRepository.save(organization);
+        } else {
+            throw new RuntimeException("Organization is not exist");
+        }
     }
 
     @Override
     public String delete(Long id) {
-        return null;
+        Optional<Organization> optionalOrganization = organizationRepository.findById(id);
+        if(optionalOrganization.isPresent()){
+            try{
+                Organization organization = optionalOrganization.get();
+                organization.setDeletedAt(LocalDateTime.now());
+                organizationRepository.save(organization);
+                return "success";
+            }   catch (Exception e)
+            {
+                throw new RuntimeException(e);
+            }
+        }
+        else {
+            throw new RuntimeException("Organization is not exist");
+        }
     }
 }
+

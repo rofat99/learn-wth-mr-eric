@@ -3,6 +3,7 @@ package com.pm.eric.learning.notification.vo.notification;
 import lombok.Data;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Data
 public class NotificationCreateResponseVO {
@@ -16,6 +17,6 @@ public class NotificationCreateResponseVO {
 
     private Long organizationId;
 
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
 }

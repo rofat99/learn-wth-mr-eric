@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -18,9 +19,9 @@ public class OrganizationDTO {
 
         private String description;
 
-        private Date createdAt;
+        private LocalDateTime createdAt;
 
-        private Date updatedAt;
+        private LocalDateTime updatedAt;
 
-        private Date deletedAt;
+        private LocalDateTime deletedAt;
 }

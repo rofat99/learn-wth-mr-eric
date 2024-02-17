@@ -8,18 +8,19 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.LastModifiedDate;
 
 import java.sql.Date;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class UserDTO {
-    private String id;
+    private Long id;
 
     private String fullName;
 
     private GenderType gender;
 
-    private Date dateOfBirth;
+    private LocalDateTime dateOfBirth;
 
     private String placeOfBirth;
 
@@ -31,9 +32,9 @@ public class UserDTO {
 
     private Long organizationId;
 
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
-    private Date updatedAt;
+    private LocalDateTime updatedAt;
 
-    private Date deletedAt;
+    private LocalDateTime deletedAt;
 }

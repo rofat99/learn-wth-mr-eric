@@ -1,7 +1,9 @@
 package com.pm.eric.learning.role.vo;
+
 import lombok.Data;
 
-import java.sql.Date;
+import java.time.LocalDateTime;
+
 @Data
 public class RoleCreateResponseVO {
     private Long id;
@@ -10,6 +12,6 @@ public class RoleCreateResponseVO {
 
     private String description;
 
-    private Date createdAt;
+    private LocalDateTime createdAt;
 
 }

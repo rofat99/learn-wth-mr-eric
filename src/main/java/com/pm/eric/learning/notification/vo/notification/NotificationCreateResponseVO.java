@@ -2,7 +2,6 @@ package com.pm.eric.learning.notification.vo.notification;
 
 import lombok.Data;
 
-import java.sql.Date;
 import java.time.LocalDateTime;
 
 @Data

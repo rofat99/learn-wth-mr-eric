@@ -1,7 +1,7 @@
 package com.pm.eric.learning.user.vo;
 
 import com.pm.eric.learning.user.types.GenderType;
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDateTime;
 

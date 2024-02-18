@@ -16,8 +16,12 @@ import java.util.Optional;
 public class NotificationServiceImpl implements NotificationService {
     @Autowired
     private NotificationDAO notificationRepository;
-    @Autowired
-    private NotificationMapper notificationMapper;
+//    @Autowired
+    private final NotificationMapper notificationMapper;
+
+    NotificationServiceImpl(NotificationMapper notificationMapper){
+        this.notificationMapper = notificationMapper;
+    }
 
     @Override
     public Notification create(NotificationDTO notificationDTO) {

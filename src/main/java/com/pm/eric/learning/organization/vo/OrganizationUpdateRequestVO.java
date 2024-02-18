@@ -1,6 +1,6 @@
 package com.pm.eric.learning.organization.vo;
 
-import lombok.Data;
+import lombok.*;
 
 @Data
 public class OrganizationUpdateRequestVO {

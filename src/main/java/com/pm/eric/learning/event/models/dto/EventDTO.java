@@ -23,4 +23,10 @@ public class EventDTO {
     private Long userId;
 
     private Long organizationId;
+
+    private LocalDateTime createdAt;
+
+    private LocalDateTime updatedAt;
+
+    private LocalDateTime deletedAt;
 }

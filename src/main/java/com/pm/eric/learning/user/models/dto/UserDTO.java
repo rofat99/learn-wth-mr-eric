@@ -2,7 +2,7 @@ package com.pm.eric.learning.user.models.dto;
 
 import com.pm.eric.learning.user.types.GenderType;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.*;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;

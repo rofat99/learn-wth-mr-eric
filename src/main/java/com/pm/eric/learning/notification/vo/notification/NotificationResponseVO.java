@@ -1,6 +1,6 @@
 package com.pm.eric.learning.notification.vo.notification;
 
-import lombok.Data;
+import lombok.*;
 
 import java.time.LocalDateTime;
 

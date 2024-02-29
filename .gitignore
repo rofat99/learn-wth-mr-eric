@@ -1,0 +1,17 @@
+# Ignore target directory (Maven)
+/target/
+
+# Ignore build directory (Gradle)
+build/
+
+# Ignore IDE-specific files (IntelliJ IDEA)
+.idea/
+
+# Ignore IDE-specific files (Visual Studio Code)
+.vscode/
+
+# Ignore any other generated files or folders
+...
+
+# Ignore any other sensitive files
+.gradle/

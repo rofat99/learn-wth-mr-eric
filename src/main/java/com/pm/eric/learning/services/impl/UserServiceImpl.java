@@ -1,9 +1,9 @@
 package com.pm.eric.learning.services.impl;
 
 import com.pm.eric.learning.mappers.UserMapper;
+import com.pm.eric.learning.models.entity.User;
 import com.pm.eric.learning.models.repository.UserRepository;
 import com.pm.eric.learning.models.dto.UserDTO;
-import com.pm.eric.learning.models.entity.User;
 import com.pm.eric.learning.services.UserService;
 import org.apache.coyote.BadRequestException;
 import org.springframework.beans.factory.annotation.Autowired;

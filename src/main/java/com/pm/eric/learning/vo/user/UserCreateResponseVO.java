@@ -9,6 +9,8 @@ import java.time.LocalDateTime;
 public class UserCreateResponseVO {
     private Long id;
 
+    private String username;
+
     private String fullName;
 
     private GenderType gender;

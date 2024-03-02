@@ -2,7 +2,6 @@ package com.pm.eric.learning.controllers;
 
 import com.pm.eric.learning.mappers.UserVOMapper;
 import com.pm.eric.learning.models.dto.UserDTO;
-import com.pm.eric.learning.models.entity.User;
 import com.pm.eric.learning.services.UserService;
 import com.pm.eric.learning.vo.user.UserCreateRequestVO;
 import com.pm.eric.learning.vo.user.UserCreateResponseVO;

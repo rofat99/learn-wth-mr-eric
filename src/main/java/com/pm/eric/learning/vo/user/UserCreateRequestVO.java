@@ -12,6 +12,12 @@ import java.time.LocalDateTime;
 @Data
 public class UserCreateRequestVO {
 
+    @NotBlank(message = "username is required")
+    private String username;
+
+    @NotBlank(message = "password is required")
+    private String password;
+
     @NotBlank(message = "fullName is required")
     private String fullName;
 

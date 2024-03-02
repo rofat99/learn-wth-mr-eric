@@ -18,6 +18,12 @@ import java.time.LocalDateTime;
 @Entity(name = "USER")
 public class User extends Audit {
 
+    @Column(name = "username", unique = true)
+    private String username;
+
+    @Column(name = "password")
+    private String password;
+
     @Column(name = "full_name")
     private String fullName;
 
@@ -41,5 +47,8 @@ public class User extends Audit {
 
     @Column(name = "organization_id")
     private Long organizationId;
+
+    @Column(name = "user_id")
+    private Long userId;
 
 }
